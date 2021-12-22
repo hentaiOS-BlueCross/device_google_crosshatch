@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay
 
-# Enable iorapd prefetching by default for crosshatch targets
+# Enable iorapd readahead for app starts
 PRODUCT_PRODUCT_PROPERTIES += \
     iorapd.readahead.enable=true
 
