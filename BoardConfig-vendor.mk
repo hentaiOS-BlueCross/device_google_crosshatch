@@ -20,6 +20,9 @@ COMMON_PATH := device/google/crosshatch
 # Fingerprint override
 TARGET_PRODUCT_PROP := $(COMMON_PATH)/product.prop
 
+# NDK platform
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
+
 # Build
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
