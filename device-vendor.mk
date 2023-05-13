@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
     android.hardware.rebootescrow-V1-ndk_platform.vendor:64 \
     libgui_shim
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Google Battery/Toshay Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
 	hardware/google/pixel-sepolicy/googlebattery \
