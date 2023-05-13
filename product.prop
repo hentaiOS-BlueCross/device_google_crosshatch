@@ -1,3 +1,9 @@
+# Device mask
+ro.build.fingerprint=google/redfin/redfin:13/TQ2A.230505.002/9891397:user/release-keys
+ro.product.manufacturer=Google
+ro.product.brand=google
+ro.product.name=redfin
+ro.product.model=Pixel 5
 
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
