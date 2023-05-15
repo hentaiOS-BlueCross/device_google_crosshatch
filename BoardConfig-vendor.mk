@@ -30,14 +30,12 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # vendor.img
-ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
-BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
-endif
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-
-# AB OTA
 AB_OTA_PARTITIONS += \
     vendor
+ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+    BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
+endif
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Inherit device vendor configuration
 $(call inherit-product, device/google/crosshatch/device-vendor.mk)
