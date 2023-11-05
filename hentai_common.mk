@@ -55,12 +55,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     GcamPrebuilt
 
-# Build Tensor/Pixel 2021 features
-PRODUCT_PACKAGES += \
-    PixelWallpapers2021 \
-    pixel_experience_2021_midyear \
-    pixel_experience_2021 \
-    pixel_experience_2022_midyear \
-    pixel_experience_2022
-
 $(call inherit-product, device/google/crosshatch/BoardConfig-vendor.mk)
