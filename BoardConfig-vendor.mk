@@ -20,9 +20,6 @@ COMMON_PATH := device/google/crosshatch
 # Fingerprint override
 TARGET_PRODUCT_PROP := $(COMMON_PATH)/product.prop
 
-# NDK platform
-NEED_AIDL_NDK_PLATFORM_BACKEND := true
-
 # Disable DM-verity
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
