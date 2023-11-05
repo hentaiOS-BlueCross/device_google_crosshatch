@@ -174,8 +174,3 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0.vendor
-
-# Google Battery/Toshay Sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += \
-	hardware/google/pixel-sepolicy/googlebattery \
-	hardware/google/pixel-sepolicy/input
